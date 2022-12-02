@@ -13,10 +13,7 @@ namespace View.Projectiles
     public class ProjectileView : MonoBehaviour, IProjectileView
     {
         private GenericPhysicalView genericPhysicalView = null!;
-
-
-        public event Action? Disposed;
-
+        
 
         public event Action<CollideData>? Event;
 
@@ -41,7 +38,7 @@ namespace View.Projectiles
 
         public void Dispose()
         {
-            Disposed?.Invoke();
+            Destroy(gameObject);
         }
     }
 }

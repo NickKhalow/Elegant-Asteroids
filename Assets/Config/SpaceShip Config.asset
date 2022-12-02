@@ -24,7 +24,7 @@ MonoBehaviour:
     projectileSpeed: 0
   gun:
     cooldown: 0.2
-    projectileLifetime: 0.5
+    projectileLifetime: 1
     projectileSpeed: 100
   laserAmmo:
     maxCount: 10
