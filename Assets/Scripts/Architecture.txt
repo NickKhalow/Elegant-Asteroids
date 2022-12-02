@@ -1,0 +1,17 @@
+//TODO shards
+
+//TODO fix pooling - balls teleporting
+
+Game
+	
+
+	
+	//asteroid & shard same object
+	-Asteroid : ITickable, IDestroyable
+		-onDestroy : Action<Asteroid> 
+		//If whole - spawn new (Subdivide),
+		//if shard - nothing
+		
+		-Physical
+		Subdivide()
+			TODO
