@@ -1,7 +1,6 @@
 using Core.Components;
 using Core.Gameplay.Actors.Enemies;
 using Core.Gameplay.Actors.Ship;
-using Core.Gameplay.Identity;
 using System;
 
 
@@ -11,15 +10,13 @@ namespace Core.Gameplay
     {
         private readonly SpaceShip spaceShip;
         private readonly Enemies enemies;
-        private readonly IdentityPool identityPool;
         private bool gameOver = false;
 
 
-        public Game(SpaceShip spaceShip, Enemies enemies, IdentityPool identityPool)
+        public Game(SpaceShip spaceShip, Enemies enemies)
         {
             this.spaceShip = spaceShip;
             this.enemies = enemies;
-            this.identityPool = identityPool;
 
             spaceShip.Destroyed += () =>
             {

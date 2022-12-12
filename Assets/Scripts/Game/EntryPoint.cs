@@ -155,8 +155,7 @@ namespace Game
                     ),
                     new Score(scorePlug),
                     identityPool
-                ),
-                identityPool
+                )
             );
             game.GameOver += OnGameOver;
             loseUi.EnsureNotNull().Hide();
